@@ -1,0 +1,12 @@
+harnessApiVersion: '1.0'
+type: INFRA_DEFINITION
+cloudProviderType: AZURE
+deploymentType: KUBERNETES
+infrastructure:
+- type: AZURE_KUBERNETES
+  cloudProviderName: Microsoft Azure
+  clusterName: k8s
+  namespace: default
+  releaseName: release-${infra.kubernetes.infraId}
+  resourceGroup: k8s_group
+  subscriptionId: b62834c5-b18a-4444-9c17-410fb4d13f20
